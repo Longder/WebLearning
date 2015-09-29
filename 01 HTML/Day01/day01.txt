@@ -5,4 +5,20 @@ AP原型
 项目
 HTML 单标签    <meta/>
      双标签    <p></p>
+     head
+          <title></title>
+          <meta/>元数据
+      body
+          <hn>..</hn> n = 1,2,3,...6
+          <p>..</p> 段落，也就是正文
+          <hr/> 水平线 size 水平线高度 color颜色
+          <span></span>呢年的分区标签
+          <div></div>区块的分区标签
+          文字修饰标记：b、i、u、s、strong、em、sub、sup
+          转义字符：&nbsp;空格 &reg;注册商标 &copy 版权信息...
+          <pre></pre>预格式化
+          <br/>换行
+          <nobr></nobr>
+          <img src="images/xxxx.jpg"/>
+          常用属性:align 对齐 style CSS样式
 HTML提倡语义化的标签，很多非语义的标签已经被废弃。比如：
