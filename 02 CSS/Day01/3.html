@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            background-color: #ddd;
+        }
+
+        * {
+            font-size: 14px;
+            font-family: "微软雅黑";
+        }
+
+        h1 {
+            color: #333;
+            font-size:20px;
+        }
+        .kuang {
+            background-color: #f0f0f0;
+            border: 1px solid #aaa;
+            width: 220px;
+            height: 30px;
+        }
+
+        .kuang:focus {
+            border: 1px solid red;
+        }
+
+        .red {
+            border: 1px solid red;
+        }
+
+        .blue {
+            color: blue;
+        }
+
+        #submit {
+            width: 100px;
+            height: 40px;
+            font-size: 16px;
+            background-color: blue;
+            color: #fff;
+        }
+
+        h1, .kuang, #submit {
+            border: 1px solid black;
+        }
+
+        h1 > span {
+            color: red;
+        }
+
+        h1 span {
+            font-style: italic;
+            font-size: 2em;
+        }
+
+        h1:hover {
+            background-color: yellow;
+        }
+
+        a:link {
+            font-size: 16px;
+            color: #333;
+        }
+
+        a:visited {
+            color: #333;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        a:active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <h1>
+        欢<strong><span>迎</span></strong><span>登录</span>
+    </h1>
+
+    <div><a href="2.html">返回京东商城</a></div>
+    <span>京东商城</span>
+    <table>
+        <tr>
+            <td class="red">用户名：</td>
+            <td><input type="text" class="kuang red blue"/></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input type="password" class="kuang"/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input id="submit" type="submit" value="登录"/>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

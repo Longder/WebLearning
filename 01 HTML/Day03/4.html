@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>个人信息</title>
+</head>
+<body>
+<h1>修改个人信息</h1>
+
+<form name="add_admin" method="post" action="edit.php">
+    <table width="700px" border="1" cellpadding="8px">
+        <tr>
+            <td width="30%">姓名：</td>
+            <td><input type="text" maxlength="10" size="15" name="username" value="mary"/></td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td><input type="radio" name="sex" value="man"/>男&nbsp;&nbsp;
+                <input type="radio" name="sex" value="woman"/>女
+            </td>
+        </tr>
+        <tr>
+            <td>学历：</td>
+            <td>
+                <select name="education">
+                    <option value="highSchool">高中</option>
+                    <option selected>中专</option>
+                    <option>大专</option>
+                    <option>本科</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>意向工作城市：</td>
+            <td>
+                <select name="city" size="5" multiple>
+                    <option value="beijing">
+                        北京
+                    </option>
+                    <option value="nanjing">
+                        南京
+                    </option>
+                    <option value="kunming">
+                        昆明
+                    </option>
+                    <option value="tianjin">
+                        天津
+                    </option>
+                    <option value="shanghai">
+                        上海
+                    </option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>个人描述：</td>
+            <td>
+                <textarea rows="8" cols="40" name="description">这家伙很懒，什么都没有写</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input id="secret" type="checkbox" name="secret" value="yes"/>
+                <label for="secret">不要公开我的个人信息</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit"/>&nbsp;<input type="reset"/>&nbsp;
+                <input type="hidden" value="你看不见我" name="id"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

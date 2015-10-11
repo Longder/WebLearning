@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        div {
+            height: 200px;
+            border: 1px solid black;
+        }
+
+        .fix {
+            width: 400px;
+        }
+
+        .nofix {
+            width: 50%;
+            min-width: 200px;
+            max-width: 400px;
+        }
+        textarea{
+            width:300px;
+            height: 200px;
+            max-width: 600px;
+            max-height:300px;
+        }
+    </style>
+</head>
+<body>
+<textarea></textarea>
+
+<div class="fix">
+    我是一个固定宽度的DIV
+</div>
+<div class="nofix">
+    我是一个可变宽度的DIV
+</div>
+</body>
+</html>

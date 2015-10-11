@@ -1,0 +1,66 @@
+项目列表
+    1.有序列表：ol（了解）
+        列表项：li
+        属性：type A、a、I、i、1
+              start 起始值
+    2.无序列表：ul
+        列表项：li
+        属性：type(了解) circle square disk
+        在项目中，多用无序列表来制作一组多个并列关系的内容，例如：菜单、导航....
+    3.定义列表：dl
+        定义标题：dt     定义内容：dd
+        定义列表由于具有层级关系，在项目中多用来制作有一定层级关系的内容。或是制作图片下方有一行或两行文字描述类似的内容
+    4.列表嵌套：如果将嵌套关系的列表写在li里，会在嵌套列表最前面出现项目编号。所以嵌套列表不要套在li里
+表单
+    form:表单
+        属性：name 定义表单的名称
+              method 定义表单的提交方式 get/post
+              action 提交动作，一般是处理表单数据的服务器端程序的路径
+              enctype 定义表单的编码方式。如果表单内容为纯文本，则无需定义这一项
+    input:type 定义input的功能
+                text 普通文本框
+                password 密码框
+                radio 单选框
+                checkbox 复选框
+                submit 提交按钮
+                file 文件域
+                reset 重置按钮
+                button 普通按钮
+                hidden 隐藏域
+           name 没有name无法提交
+           value 初始值、默认值、按钮文字...
+           maxlength 文本框的最大字符数
+           size 文本框宽度，单位为字符
+           readonly 只读  disabled 禁用
+           checked 选择框默认选中状态
+     select 选择菜单
+            用option定义菜单项，selected表示默认选中
+            size行数，可为多行的菜单
+            multiple 多选，仅多行菜单可用
+            name,value
+     textarea 文本域，多行文本框
+              默认的填写在文本域中的文字放在一对textarea标记中间。
+              cols 列数，即宽度
+              rows 行数，即高度
+     label 文本标签 可用for属性与checkbox的id绑定
+           单击label相当于单击checkbox
+     表单元素分组  fieldset legend定义组标题
+其他常用标记：
+    iframe 浮动框架
+            属性：src(必备)
+                  width、height
+                  frameborder(0/1)
+                  scrolling 滚动条是否显示（yes/no）
+                  name 框架名，可以在链接的target中制定该名称，使链接在框架中打开
+    details 详情与摘要
+            summary定义摘要
+            详情中可以包含文字、图片
+    meter 度量衡  表示比例关系
+          min: 范围的最小值
+          max: 范围的最大值
+          value: 当前值
+    time 定义时间   语义化的标签
+         datetime: 2011-11-11T11:11
+         pubtime:发布时间
+    mark 重点、标记
+

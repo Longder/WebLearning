@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>图像边框</title>
+    <style type="text/css">
+        div {
+            width: 300px;
+            height: 150px;
+            border-width: 26px;
+        }
+
+        #d1 {
+            border-image: url("images/border.png") 26 round;
+        }
+
+        #d2 {
+            border-image: url("images/border.png") 26 repeat;
+        }
+
+        #d3 {
+            border-image: url("images/border.png") 26 stretch;
+        }
+
+        input {
+            outline: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="d1"></div>
+<br/>
+
+<div id="d2"></div>
+<br/>
+
+<div id="d3"></div>
+<br/>
+<input type="text"/>
+</body>
+</html>

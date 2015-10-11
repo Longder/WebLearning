@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>增加管理员</title>
+</head>
+<body>
+<h1>增加管理员</h1>
+
+<form name="add_admin">
+    <table width="500px" cellspacing="8px">
+        <tr>
+            <td width="20%">姓名：</td>
+            <td><input type="text" maxlength="10" size="15" name="username"/></td>
+            <td>10个字符以内</td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input name="password" type="password" size="15" maxlength="10"/></td>
+            <td>10个字符以内</td>
+        </tr>
+        <tr>
+            <td>性别：</td>
+            <td><input type="radio" name="sex" value="man"/>男&nbsp;&nbsp;
+                <input type="radio" name="sex" value="woman"/>女
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>角色：</td>
+            <td>
+                <input type="checkbox" name="admin" value="super"/>超级管理员<br/>
+                <input type="checkbox" name="admin" value="advance"/>账单管理员
+            </td>
+            <td>至少选择一个角色</td>
+        </tr>
+        <tr>
+            <td>头像：</td>
+            <td ><input type="file" name="image"/></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="submit"/>&nbsp;<input type="reset"/>&nbsp;
+            <input type="hidden" value="你看不见我" name="id"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

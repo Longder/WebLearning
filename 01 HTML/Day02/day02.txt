@@ -1,3 +1,38 @@
+URL:统一资源定位器，也就是路径
+    绝对路径：用 协议名+主机名+目录名+文件名定义
+    相对路径：从文件所在的位置出发查找目录文件
+图像： JPG支持真彩色
+       GIF 只支持256种颜色，但支持动画与背景透明
+       PNG 支持效果非常好的透明、半透明，支持真彩色
+    img 必备属性src，定义图像路径
+        width、height，可以为具体的值或百分比，只定义width，表示定宽，高度自动等比例调整
+        只定义height，表示定高，宽度自动调整
+        alt 替代文字    title说明
+链接：
+普通链接：用a标记定义链接，用href属性定义链接路径
+         用target属性定义目标位置
+            _blank表示新打开一个浏览器窗口
+            _self表示在当前窗口打开链接（默认）
 锚点链接
     1.先定义锚点，在想跳转到的位置的前面加一堆a标记，并指定a标记的名称（name属性）
     2.为导航添加链接，指定链接地址为#name，计科链接到指定的锚点
+邮件链接：
+    mailto:邮箱地址
+链接指向的目标可以是文件、图像、压缩包、媒体...
+
+颜色的表达方式
+    <body text="red">
+    </body>
+    bordercolor="black"
+    关键字：black red blue green...
+    颜色值：#ddd=#dddddd  #336699
+            十六进制的RGB颜色值
+表格：
+    table align width height cellspacing cellpadding border bodercolor bgcolor
+    单元行 tr    align valign
+    单元格 td    align valign colspan rowspan
+    航分组标签：thead tbody tfood
+    表格标题：caption
+结构标签：让代码更易读，语义化更好
+    header、section、nav、aside、article、footer
+    缺点：不同浏览器对其属性支持不同，可能有兼容性问题
