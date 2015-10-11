@@ -1,0 +1,11 @@
+盒子模型：宽度=内容物的宽+border+padding+margin
+
+margin:margin是外边距
+        可以为负值，也可以为auto
+        水平左右margin为auto，容器居中对齐
+        margin-left为负值，容器向左移动
+        margin-top为负值，容器向上移动
+        上面容器的margin-bottom遇到下容器的margin-top时取较大的值为最终的margin
+padding:padding会撑开容器，计算宽度和高度时需要加上padding
+
+内边距与外边距，内与外是相对的。外层容器的内边距相当于子容器的外边距

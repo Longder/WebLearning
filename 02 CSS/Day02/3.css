@@ -1,0 +1,38 @@
+#content {
+    width: 838px;
+    min-height: 50px;
+    padding: 10px 15px 5px;
+    border: 1px solid #d0e4c2;
+}
+
+#page {
+    width: 838px;
+    margin-top: 10px;
+}
+
+#page a {
+    padding: 3px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 2px;
+}
+
+/*µ±Ç°Ò³Ãæ*/
+#page .current {
+    border: none;
+    padding: 4px 11px;
+}
+
+#stars {
+    border-bottom: 1px solid #d0e4c2;
+}
+
+#star {
+    width: 75px;
+    height: 14px;
+    background: url("images/iconlist_1.png") no-repeat -109px -239px;
+}
+
+.star4 {
+    background-position: -124px -239px;
+}

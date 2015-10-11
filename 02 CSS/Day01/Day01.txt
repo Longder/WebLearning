@@ -22,3 +22,33 @@ CSS基础
                   a:link、a:visited
         动态伪类：定义鼠标的交互
                   :hover  :active :focus
+    选择器的优先级：标签选择器<类选择器<id选择器
+    复合选择器的优先级： div p span < div p span.class < div p span#id
+边框样式：
+    border:元素的外边框 border:width style color
+    border=border-left+border-right...
+    border-left: border-right:
+    border-left-style...
+    border-color 只能定义颜色
+    border-width 只能定义大小
+    border-style 只能写样式 solid dashed dotted
+    border-radius 边框倒角（圆角）
+    border-radius:5px; 四个角都是5ps
+    border-radius:5px 10px;
+    border-radius:5px 10px 15px; 未定义的那个角的值和它的对角线相等
+    border-radius:5px 10px 15px 20px; 顺序从左上角开始，顺时针转一圈
+
+    box-shadow 阴影
+    box-shadow:h-shadow v-shadow blur spread color 这些属性是按顺序来识别的
+    color如果不定义，默认是黑色，
+    单如果选择器里定义了color，那个shadow就是color的颜色
+
+    border-image 将素材图进行九宫格切片，四个角位置就是border-image的四个顶点
+    repeat属性决定了中间位置的图形如何处理
+    border-image: source size repeat
+尺寸
+    px 像素
+    em 在原来的基础上进行倍数的缩放
+    百分比
+    pt 1pt=1/72英寸
+width height max-width min-width max-height min-height
