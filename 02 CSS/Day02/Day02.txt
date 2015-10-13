@@ -9,3 +9,30 @@ margin:margin是外边距
 padding:padding会撑开容器，计算宽度和高度时需要加上padding
 
 内边距与外边距，内与外是相对的。外层容器的内边距相当于子容器的外边距
+
+背景 背景包括背景图 背景颜色
+        背景色：background-color
+        背景图：background-image
+        background-repeat 背景图重复方式
+                repeat、no-repeat、repeat-x、repeat-y
+        background-position：x-position y-position
+                x-position为负值，背景图左移
+                y-position为负值，背景图上移
+        background-attachment 背景图固定 fixed
+
+        background-size 背景图缩放 一般不用
+                background-size:width height
+        background-clip 背景色裁剪
+                背景色默认是从border-box开始的
+                可以用该属性开始位置为padding-box或者是content-box
+        background-origin 背景图裁剪区域
+                背景图默认的开始位置
+                可以是 border-box、padding-box、content-box
+        渐变
+                background-image的属性值
+                可以是线性渐变(linear-gradient)
+                径向渐变(radial-gradient)
+                重复线性渐变(repeating-linear-gradient)
+                重复径向渐变(repeating-linear-gradient)
+                background-image:linear-gradient(to bottom/to top/30deg,#fff,#000)
+                radial-gradient(200px,at top left,#fff 10%,#000 80%)

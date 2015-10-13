@@ -16,13 +16,19 @@
     border-radius: 5px;
     margin-right: 2px;
 }
-
+#page a:hover{
+    background-color:#005aa0;
+    color:#fff;
+}
 /*µ±Ç°Ò³Ãæ*/
 #page .current {
     border: none;
     padding: 4px 11px;
 }
-
+#page .current:hover{
+    background:transparent;
+    color:#666;
+}
 #stars {
     border-bottom: 1px solid #d0e4c2;
 }
@@ -31,9 +37,26 @@
     width: 75px;
     height: 14px;
     background: url("images/iconlist_1.png") no-repeat -109px -239px;
-
+    margin-bottom: 6px;
 }
 
-.star4 {
-    background-position: -124px -239px;
+#content p b {
+    height: 21px;
+    background: #fdedd2;
+    padding: 7px 5px;
+    margin: 5px;
+}
+
+#content p span {
+    margin: 5px;
+}
+
+#content p input {
+    width: 80px;
+    padding: 10px;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    color: #333;
+    margin-right: 10px;
+    background-image: linear-gradient(to bottom, #fafafa, #ccc);
 }
