@@ -27,7 +27,7 @@
 }
 #page .current:hover{
     background:transparent;
-    color:#666;
+    color:#000;
 }
 #stars {
     border-bottom: 1px solid #d0e4c2;
@@ -59,4 +59,10 @@
     color: #333;
     margin-right: 10px;
     background-image: linear-gradient(to bottom, #fafafa, #ccc);
+}
+#content p input:hover{
+    background-image: linear-gradient(to bottom, #fafafa, #ccc);
+}
+#content p input:active{
+    background-image: linear-gradient(to top, #fafafa, #ccc);
 }
