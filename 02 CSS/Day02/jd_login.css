@@ -26,6 +26,7 @@ header {
     border: 1px solid #e1e1e1;
     background: #fff;
     width: 100%;
+    color: #999;
 }
 
 .box {
@@ -34,9 +35,35 @@ header {
     border: 1px solid #ccc;
     font-size: 14px;
     margin-top: 7px;
-    padding:4px 20px 4px 3px;
+    padding: 4px 20px 4px 3px;
 }
 
 .user {
     background: url("images/user.png") no-repeat right center;
+}
+
+.password {
+    background: url("images/pwd.png") no-repeat right center;
+}
+
+.login_btn {
+    width: 307px;
+    height: 34px;
+    background: url("images/login_all_bg.png") 0 -61px;
+    border: none;
+}
+
+.login_btn:hover {
+    background: url("images/login_all_bg.png") 0 -95px;
+}
+.register_btn{
+    font-size:14px;
+    color: white;
+    width:115px;
+    height:32px;
+    border:none;
+    background:#7cbe56;
+}
+.register_btn:hover{
+    background:#98c964;
 }
