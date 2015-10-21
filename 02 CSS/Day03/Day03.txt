@@ -1,2 +1,59 @@
 标题字：字体、大小、颜色
 正文字：字体、颜色、大小
+
+字体设置：
+    如果是中文，就用中文字体。
+    标题或大字号的字用微软雅黑
+    小字、正文字体用宋体
+
+    如果是英文或数字或英文符号，就用英文字体
+    Arial：类似中文里的黑体
+    Times：类似中文里的宋体
+font-size:大小
+font-family:字体样式
+font-weight:bold 粗体字
+font-style:italic 斜体字
+*font-variant:small-caps
+
+color 颜色
+text-align 内容对齐的方式 left center right
+text-decoration underline none
+text-indent 首行缩进 对每个段落的首行起作用
+line-height 行高 段落文本中可用行高控制行距
+            单行文本可以用行高=容器搞，让文字垂直居中
+
+letter-spacing 定义字间距
+word-spacing
+
+white-space 定义空白内容处理方式。（文字是否自动换行）
+            nowrap  不换行
+text-overflow clip 默认
+              ellipsis 在文本最后添加...
+              需要与overflow:hidden 配合使用
+
+word-wrap 处理长单词的换行方式
+          normal
+          break-word 单词会被打断（换行）
+word-break break-all 打破单词的限制
+           keep-all 不允许长单词换行
+
+table:
+    通用类：border、width、height、padding
+            文本格式化
+            背景
+    表格专用：
+            border-collapse:collapse/separate 合并边框
+            border-spacing:value/value1 value2;
+            caption-side:表格标题位置
+            table-layout:fixed/auto 表格宽度固定或自动
+浮动：
+    默认情况下块元素是按照标准流排列的
+    如果给某个元素设置浮动，元素会跳出标准流
+    float:left 浮到左边    right 浮到右边
+    设置浮动的元素周围没有浮动浮动的元素会上移与浮动框重叠
+    浮动会卡住，影响浮动效果的因素很多，所以以实际效果为准
+    当子元素全部为浮动元素时，父元素不会自动适应高度，可以为父元素添加overflow:hidden解决该问题
+
+    解决浮动造成的布局混乱：clear
+    clear定义的是元素的哪一边不允许出现浮动元素
+    left、right、both
