@@ -1,0 +1,52 @@
+body {
+    color: #666;
+    font-size: 12px;
+    font-family: Arial, Verdana;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav {
+    width: 1210px;
+    height: 40px;
+    background: #e64346;
+    margin: 10px auto;
+}
+
+#all_cate {
+    width: 203px;
+}
+.cate_title{
+    width:188px;
+    height:40px;
+    background-color: #cd2a2c;
+    line-height:40px;
+    padding-left:15px;
+}
+.cate_title a{
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:bold;
+}
+.cate_title a:hover{
+    text-decoration:underline;
+}
+.cate_title span{
+    display:block;
+    width:20px;
+    height:20px;
+    margin-top: 10px;
+    background: url("Images/iconlist_2.png") no-repeat -65px 0px;
+    float:right;
+}
+#cate_main{
+    height: 402px;
+    padding:4px 3px 3px 0;
+    border:2px solid #e4393c;
+    border-top: none;
+}

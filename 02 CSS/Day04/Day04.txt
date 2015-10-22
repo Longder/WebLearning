@@ -12,3 +12,20 @@ opacity 透明度
 vertical-align 垂直对齐
     可用于单元格的内容垂直对齐
     也可用于调整行内元素的垂直对齐方式
+
+cursor 鼠标样式
+    default 默认鼠标
+    pointer 指针（手）
+    crosshair 十字形
+    text
+    wait 一般不要定义这个
+    help
+
+列表样式
+    list-style-type 定义列表的符号的样式
+    list-style-image 用图像代替列表符号
+    list-style-position 列表符号位置 inside outside
+    list-style: type url position
+    一般来说，项目中最常用的：list-style:none
+    然后用background来实现项目列表符号
+    原因：background更好控制，且可以使用拼在一起的图片
