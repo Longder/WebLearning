@@ -29,3 +29,38 @@ cursor 鼠标样式
     一般来说，项目中最常用的：list-style:none
     然后用background来实现项目列表符号
     原因：background更好控制，且可以使用拼在一起的图片
+
+定位
+    position 改变元素默认的标准流的定义方式
+    1.需要将元素进行偏移，并且不影响周边元素
+      position:relative  left/right
+                         top/bottom
+    2.如果需要制作重叠的效果
+      position:absolute
+      父级元素要有定位属性（relative/absolute）
+      然后可以用left、right等设置偏移
+    3.需要手动调整玄素的上下层叠顺序
+      position:absolute/relative
+      用z-index属性设置
+      要求：
+        1.父级元素要定位
+        2.所有用z-index调整顺序的元素要定位
+
+position方式：static 、relative、absolute、fixed
+            static:默认
+            relative:相对（相对父级元素）元素依然占页面空间，框的位置保持不变
+            absolute:绝对 元素会跳出标准流不占页面空间
+                          如果设置偏移，会相对于已定位的祖先元素进行偏移，
+                          如果没有已定位的祖先元素，则相对于body进行偏移。
+            fixed：固定 元素会跳出标准流不再占页面空间 元素相对于body进行定位 不会随着页面滚动而滚动
+                        一般用于制作页面中固定位置的元素
+z-index
+    调整元素的上下层叠顺序。
+    可以为正值、负值、零
+    值越大越靠上。
+    z-index为负值时，会位于所有元素的下方
+    z-index如果要生效，要求：
+        1.父级元素已定位
+        2.所有需要调整层叠顺序的元素已定位
+
+

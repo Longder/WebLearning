@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        div {
+            border: 1px solid black;
+        }
+
+        #parent {
+            width: 400px;
+            height: 400px;
+            margin: 40px auto;
+            position: relative;
+            background:#ff0;
+        }
+
+        #child {
+            width: 200px;
+            height: 200px;
+            border-color: green;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+            background: #ddd;
+            z-index:1;
+        }
+
+        #child2 {
+            width: 200px;
+            height: 200px;
+            border-color: red;
+            z-index:2;
+            position:relative;
+        }
+
+        #fixed {
+            width: 80px;
+            height: 40px;
+            border-color: green;
+            position: fixed;
+            right: 40px;
+            bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+<div id="parent">
+    <div id="child">
+        Child1
+    </div>
+    <div id="child2">
+        Child2
+    </div>
+    <div id="fixed">
+        返回顶部
+    </div>
+</div>
+</body>
+</html>

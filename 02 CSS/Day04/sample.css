@@ -10,6 +10,7 @@ body {
     list-style: none;
 }
 
+/*导航样式*/
 #nav {
     width: 1210px;
     height: 40px;
@@ -17,36 +18,127 @@ body {
     margin: 10px auto;
 }
 
+/*全部分类*/
 #all_cate {
     width: 203px;
+    float: left;
 }
-.cate_title{
-    width:188px;
-    height:40px;
+
+.cate_title {
+    width: 188px;
+    height: 40px;
     background-color: #cd2a2c;
-    line-height:40px;
-    padding-left:15px;
+    line-height: 40px;
+    padding-left: 15px;
 }
-.cate_title a{
-    color:#fff;
-    text-decoration:none;
-    font-size:14px;
-    font-weight:bold;
+
+.cate_title a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
 }
-.cate_title a:hover{
-    text-decoration:underline;
+
+.cate_title a:hover {
+    text-decoration: underline;
 }
-.cate_title span{
-    display:block;
-    width:20px;
-    height:20px;
+
+.cate_title span {
+    display: block;
+    width: 20px;
+    height: 20px;
     margin-top: 10px;
     background: url("Images/iconlist_2.png") no-repeat -65px 0px;
-    float:right;
+    float: right;
 }
-#cate_main{
+
+#cate_main {
     height: 402px;
-    padding:4px 3px 3px 0;
-    border:2px solid #e4393c;
+    width:196px;
+    padding: 4px 3px 3px 0;
+    border: 2px solid #e4393c;
     border-top: none;
+    background: #fafafa;
+    position:absolute;
+}
+
+#cate_main > h3 {
+    width: 175px;
+    height: 28px;
+    border-bottom: 1px solid #fff;
+    line-height: 28px;
+    padding-left: 13px;
+    font-size: 14px;
+    color: #333;
+    position:relative;
+    z-index:2;
+}
+
+#cate_main > h3:hover {
+    width: 177px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+#cate_main > h3 > a {
+    color: #333;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/*主菜单*/
+#nav_main {
+    float: left;
+}
+
+#nav_main ul {
+
+}
+
+#nav_main ul li {
+    float: left;
+}
+
+#nav_main ul li a {
+    width: 85px;
+    height: 40px;
+    display: block;
+    font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center; /**水平居中**/
+    line-height: 40px; /**垂直居中**/
+}
+
+#nav_main ul li a:hover {
+    background: #bd2a2c;
+}
+
+.sub_cate {
+    position:absolute;
+    width:705px;
+    height:430px;
+    border:1px solid #ddd;
+    background:#fff;
+    box-shadow:0px 0px 2px 1px #ddd;
+    /*要求定义cate_main的position为absolute*/
+    top:3px;
+    left:189px;
+    z-index:1;
+    /*display: none;*/
+}
+.sub_cate .close{
+    width:26px;
+    height:26px;
+    background:#555;
+    font-size:16px;
+    color:#fff;
+    text-align: center;
+    line-height:26px;
+    position: relative;
+    left:706px;
+    margin-top:-1px;
+    cursor: pointer;
 }
