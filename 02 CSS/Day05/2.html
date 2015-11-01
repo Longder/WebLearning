@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        [title] {
+            color: green;
+        }
+
+        [align] {
+            letter-spacing: 5px;
+        }
+
+        p[title] {
+            text-decoration: underline;
+        }
+
+        [class~="border"] {
+            border: 1px solid black;
+        }
+
+        [id*="t"] {
+            background:yellow;
+        }
+    </style>
+</head>
+<body>
+<h1 align="center" id="t1" class="red center border">复杂选择器</h1>
+
+<h2 id="t2" title="标题2">属性选择器</h2>
+
+<p id="mt" title="属性选择器" class="border">属性选择器可筛选出带有符合条件的属性的元素</p>
+</body>
+</html>
