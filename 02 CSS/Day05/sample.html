@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            font-size: 13px;
+            color: #666;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        ul li {
+            float: left;
+            margin: 10px;
+        }
+
+        ul li a {
+            padding: 5px 25px;
+            color: #666;
+            text-decoration: none;
+            border: 1px solid #aaa;
+        }
+
+        ul li a:hover {
+            color: #333;
+            border-color: #3498db;
+            box-shadow: 0 0 2px 1px #3498db;
+        }
+
+        #box {
+            width: 398px;
+            height: 398px;
+            border: 1px solid #aaa;
+            margin: 10px;
+        }
+
+        #box img {
+            margin: 15px;
+            width: 350px;
+            height: 350px;
+            /*visibility: hidden;*/
+            display: none;
+        }
+
+        #box img:target {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#img1">图片1</a></li>
+    <li><a href="#img2">图片2</a></li>
+    <li><a href="#img3">图片3</a></li>
+    <li><a href="#img4">图片4</a></li>
+</ul>
+<div id="box">
+    <img src="Images/p001.jpg" id="img1"/>
+    <img src="Images/p002.jpg" id="img2"/>
+    <img src="Images/p003.jpg" id="img3"/>
+    <img src="Images/p004.jpg" id="img4"/>
+</div>
+</body>
+</html>

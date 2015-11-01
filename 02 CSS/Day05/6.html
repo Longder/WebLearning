@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        p {
+            width: 200px;
+        }
+
+        .text:first-letter {
+            font-size: 30px;
+            color: red;
+            font-weight: bold;
+        }
+
+        .text:first-line {
+            background: yellow;
+        }
+
+        ::selection {
+            color: red;
+            background: green;
+        }
+
+        p:before {
+            content: "正文";
+        }
+
+        li:before {
+            content: url("Images/m1.gif");
+            padding-right: 5px;
+        }
+
+        li:after {
+            content: ">>";
+        }
+    </style>
+</head>
+<body>
+<h1>伪元素选择器</h1>
+
+<p class="text">伪元素选择器可以用来定义页面中文本的一些特殊样式。例如，这个p标记的样式就很不一样，不信你看看。</p>
+
+<p>伪元素选择器可以用来定义页面中文本的一些特殊样式。例如，这个p标记的样式就很不一样，不信你看看。</p>
+<ul>
+    <li>项目1</li>
+    <li>项目2</li>
+    <li>项目3</li>
+    <li>项目4</li>
+</ul>
+</body>
+
+</html>

@@ -10,19 +10,27 @@
     <img src="taobao_login/taobao_logo.png"/>
 </header>
 <section>
-<div id="login_box">
-    <h1>登录</h1>
-    <div class="info_username">
-        <input type="text"/>
+    <div id="login_box">
+        <h1>登录</h1>
+
+        <div class="info_username">
+            <input type="text"/>
+        </div>
+        <div class="info_password">
+            <input type="password"/>
+        </div>
+        <p>
+            <input type="checkbox" id="chkSafe"/><label for="chkSafe">安全控件登录</label>
+            <a href="#">忘记登录密码？</a>
+        </p>
+        <input class="btn_login" type="button" value="登录"/>
+
+        <div class="other_login">
+            <a href="#" class="weibo">微博登录</a>
+            <a href="#" class="pay">支付宝登录</a>
+            <a href="#" class="register">免费注册</a>
+        </div>
     </div>
-    <div class="info_password">
-        <input type="password"/>
-    </div>
-    <p>
-        <input type="checkbox" id="chkSafe"/><label for="chkSafe">安全控件登录</label>
-        <a href="#">忘记登录密码？</a>
-    </p>
-</div>
 </section>
 </body>
 </html>

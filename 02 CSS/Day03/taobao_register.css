@@ -1,0 +1,96 @@
+/*布局样式*/
+body {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    background-color: #fff;
+    color: #3c3c3c;
+    font: 12px arial, 'Hiragino Sans GB', \5b8b\4f53, sans-serif;
+}
+
+header, section, footer {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+/*顶部导航*/
+nav {
+    width: 100%;
+    height: 35px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #eee;
+}
+
+/*头部*/
+header {
+    padding: 10px 0;
+}
+
+header h2 {
+    display: inline-block;
+    height: 43px;
+    line-height: 43px;
+    margin-left: 6px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.steps {
+    height: 40px;
+    border-bottom: 2px solid #e6e6e6;
+}
+
+/*注册框相关*/
+.register_box {
+    width: 770px;
+    margin: 0 auto;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.register_box > div {
+    padding: 10px;
+    line-height: 36px;
+    overflow: hidden;
+}
+
+span.form_label {
+    float: left;
+    line-height: 37px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.register_box > div select {
+    font-size: 16px;
+    color: black;
+    background: white;
+    width: 120px;
+}
+
+/*手机号码相关*/
+div.mobile_info, div.code_info {
+    float: left;
+    line-height: 36px;
+    font-size: 14px;
+}
+
+div.mobile_info span {
+    float: left;
+    width: 60px;
+    height: 35px;
+    line-height: 35px;
+    background-color: #ededed;
+    color: #999;
+    text-align: center;
+    border: 1px solid #dedede;
+    border-right: 0;
+}
+
+div.mobile_info input {
+    padding-left: 5px;
+    border: 1px solid #dedede;
+    width: 162px;
+    height: 33px;
+    line-height: 33px;
+}
