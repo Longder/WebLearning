@@ -11,3 +11,61 @@
 伪类选择器
     链接伪类：定义链接样式
     动态伪类： :hover  :active  :focus
+复杂选择器
+    兄弟选择器   相邻兄弟    通用兄弟
+    p+b p~b
+
+    属性选择器   筛选出指定的属性
+    [value="text"]
+
+    目标伪类：:target    指定作为连接目标的元素
+    <a href="#target">文字</a>
+    <div id="target">点击时会变红</div>
+    div:target{color:red}
+
+    元素状态伪类：多用于表单
+    :enabled :disabled :checked 单选与多选专用
+
+    结构伪类：first-child、last-child、:empty、:only-child
+    定义元素的父元素的（第一个）子元素
+    li:first-child
+
+    否定伪类:not(选择器) :not([id])
+
+    伪元素选择器：
+        :first-line
+        :first-letter
+        ::selected
+
+内容生成
+    p:before{content:""; content:url("path")}
+
+计数器
+    counter-reset   声明计数器并定义初始值，可为负数
+    counter(name) 调用计数器
+    counter-increment 定义计数器增量
+        counter-increment:name 2
+
+多列
+    column-count:n;
+    有兼容性问题：火狐需要加-moz-，谷歌与safari需要加-webkit-
+
+兼容性处理
+    因浏览器对CSS代码解析的标准不同，所以会出现兼容性问题
+    可以使用css hack处理
+    IE条件注释
+    <!--[if IE 6]-->
+        针对IE6的CSS样式
+    <[end if]-->
+
+    if IE n 指定的IE版本
+    if !IE n 排除指定的版本
+    if lt IE 8 低于
+    if lte IE 8 低于等于
+    if gt IE 8 高于
+    if gte IE 8 高于等于
+
+    IE条件注释最懂只支持到IE8，8以上不支持
+
+    出现兼容性，可以给出问题的浏览器版本写支持的css样式
+    写的时候需要注意顺序，先写标准的，再写特殊的

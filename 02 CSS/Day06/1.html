@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            perspective: 200px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            background: #ddd;
+            margin-bottom: 10px;
+        }
+
+        #d1 {
+            transform: rotateX(30deg);
+            /*transform: rotate(90deg);*/
+            /*transform-origin: left top;*/
+        }
+
+        #d2 {
+            transform: scale(0.8, 1.1);
+        }
+
+        #d3 {
+            /*transform:translate(50px,-20px);*/
+            transform: translateY(50px);
+        }
+
+        /*        #d3:hover {
+                    transform: scale(1.2);
+                    /!*transform-origin: 50px 30px;*!/
+                }*/
+        #d4 {
+            /*transform:skewY(30deg) translateY(120px);*/
+            transform: translate(0px);
+            transition: transform 5s linear 2s;
+        }
+
+        #d4:hover {
+            transform: translate(100px);
+        }
+    </style>
+</head>
+<body>
+<div id="d1">这是DIV1</div>
+<div id="d2"></div>
+<div id="d3"></div>
+<div id="d4"></div>
+</body>
+</html>
