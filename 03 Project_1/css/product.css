@@ -208,6 +208,7 @@ a:hover {
 
 #search_pop li {
     line-height: 22px;
+    padding: 2px 4px;
 }
 
 #search_pop li:hover {
@@ -216,6 +217,19 @@ a:hover {
 
 #search_pop > li {
     cursor: pointer;
+}
+
+#search_pop > ul > li {
+    padding-left: 2em;
+}
+
+#search_pop b {
+    color: #cc0000;
+}
+
+#search_pop span {
+    color: #aaa;
+    float: right;
 }
 
 /*************HEADER END************/
