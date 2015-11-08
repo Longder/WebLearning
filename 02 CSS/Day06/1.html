@@ -23,7 +23,12 @@
         }
 
         #d2 {
-            transform: scale(0.8, 1.1);
+            /*transform: scale(0.8, 1.1);*/
+            transition: transform 2s linear;
+        }
+
+        #d2:hover {
+            transform: rotateY(180deg);
         }
 
         #d3 {
@@ -37,10 +42,13 @@
                 }*/
         #d4 {
             /*transform:skewY(30deg) translateY(120px);*/
+            background: #fff;
             transform: translate(0px);
-            transition: transform 5s linear 2s;
+            transition: transform 5s linear, background 3s linear;
         }
+
         #d4:hover {
+            background: #f00;
             transform: translate(100px);
         }
     </style>

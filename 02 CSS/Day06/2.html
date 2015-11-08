@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        div {
+            width: 200px;
+            height: 200px;
+            background: yellow;
+            border: 1px solid red;
+            animation: dong 3s linear;
+
+            animation-fill-mode: both;
+            /*forwards 动画结束后保持最后一帧
+                backwards 动画开始前，显示第一帧
+                both 以上都有
+            */
+            animation-play-state: running;
+        }
+
+        div:hover {
+            animation-play-state: paused;
+        }
+
+        @-webkit-keyframes dong {
+            from {
+                margin-left: 30px;
+                background: green;
+            }
+            50% {
+                margin-left: 90px;
+                margin-top: 50px;
+                background: red;
+            }
+            to {
+                margin-left: 150px;
+                background: blue;
+            }
+        }
+
+        @-moz-keyframes dong {
+            from {
+                margin-left: 30px;
+                background: green;
+            }
+            50% {
+                margin-left: 90px;
+                margin-top: 50px;
+                background: red;
+            }
+            to {
+                margin-left: 150px;
+                background: blue;
+            }
+        }
+
+        @-o-keyframes dong {
+            from {
+                margin-left: 30px;
+                background: green;
+            }
+            50% {
+                margin-left: 90px;
+                margin-top: 50px;
+                background: red;
+            }
+            to {
+                margin-left: 150px;
+                background: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

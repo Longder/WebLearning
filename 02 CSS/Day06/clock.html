@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        #clock {
+            width: 320px;
+            height: 320px;
+            border: 6px solid #a25279;
+            border-radius: 200px;
+            position: relative;
+        }
+
+        @keyframes hour {
+            from {
+                transform: rotate(180deg);
+            }
+            to {
+                transform: rotate(540deg);
+            }
+        }
+
+        #hour {
+            width: 100px;
+            height: 10px;
+            background: #a25279;
+            position: absolute;
+            left: 160px;
+            top: 155px;
+            transform: rotate(180deg);
+            transform-origin: left center;
+            transition: transform 30s linear;
+            animation: hour 10s linear infinite;
+        }
+
+        #hour:hover {
+            transform: rotate(540deg);
+        }
+
+        @keyframes minute {
+            from {
+                transform: rotate(180deg);
+            }
+            to {
+                transform: rotate(540deg);
+            }
+        }
+
+        #minute {
+            width: 6px;
+            height: 120px;
+            background: #a25279;
+            position: absolute;
+            left: 157px;
+            top: 160px;
+            transform: rotate(180deg);
+            transform-origin: center top;
+            transition: transform 10s linear;
+            animation: minute 2s linear infinite;
+            animation-play-state: running;
+        }
+
+        #minute:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+<div id="clock">
+    <div id="hour"></div>
+    <div id="minute"></div>
+</div>
+</body>
+</html>

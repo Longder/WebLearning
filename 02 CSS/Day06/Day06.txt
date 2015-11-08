@@ -1,0 +1,50 @@
+transform 转换    使元素改变状态
+    2D：scale 缩放  倍数
+        rotate 旋转 角度（正值为顺时针，负值为逆时针）
+        translate 位移 translate(Xvalue，Yvalue)-->
+        skew 倾斜     单位：角度
+
+    3D：perspective  定义元素的子元素3D变换的空间
+        rotate rotateX rotateY rotateZ
+               rotate(x,y,z,deg) rotate(1,1,1,30deg)
+        translateX，Y，Z
+        scaleX scaleY scaleZ
+            scale3D(x,y,z)
+
+过渡 transition   让元素的变换有一个过渡效果
+    需要动作触发：:hover、:active、:focus、javascript
+    transition:width 3s linear 1s
+    必备属性：前两个    过渡属性可以用all(所有属性)
+
+动画 animation
+    关键帧：@keyframes name{
+                form{
+                    第一帧的属性
+                }
+                percent(百分比){
+                    中间帧的属性
+                }
+                to{
+                    最后一帧的属性
+                }
+            }
+    用animation属性调用
+    animation:name 动画过程时间 加速度 重复次数 延迟
+    兼容性：Chrome加-webkit-
+           Firefox加-moz-
+           Opera加-o-
+
+    animation-fill-mode
+    动画开始播放前、播放结束后，是否保持动画帧状态
+    forwards 保持最后一帧状态
+    backwards 保持第一帧状态
+    both 保持第一帧和最后一帧状态
+    如果动画无限循环，则无效
+
+    animation-play-state
+    running 播放
+    paused 暂停
+
+    hover paused、默认 running
+    可以实现鼠标滑过动画暂停，离开继续播放
+

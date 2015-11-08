@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font: 12px "Microsft Yahei", Arial, Helvetica, sans-serif;
+    color: #666;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e4393c;
+    text-decoration: underline;
+}
+
+.wrap, #header, #nav, #content, #footer_link, #footer {
+    width: 1211px;
+    margin: 0 auto;
+}
+
+/*************HEADER_NAV*************/
+#header_nav {
+    width: 100%;
+    height: 30px;
+    background: #f7f7f7;
+    border-bottom: 1px solid #eee;
+    line-height: 30px;
+}
+
+#header_nav a:hover {
+    color: #ff0700;
+}
+
+#header_nav span i {
+    margin: 10px 4px;
+
+}
+
+#header_nav span i:hover {
+    transform: rotate(360deg);
+    transition: transform 1s linear;
+}
+
+.rt_01 {
+    float: right;
+}
+
+#header_nav span, .rt_01 p, .rt_01 a, .rt_01 s {
+    float: left;
+    position: relative;
+}
+
+.rt_01 s {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 4px;
+}
+
+.rt_01 .vip, .rt_01 .company {
+    background: url("../Images/vip.jpg") no-repeat left center;
+    padding-left: 25px;
+}
+
+.rt_01 .company {
+    background-image: url("../Images/dakehu.jpg");
+}
+
+.rt_01 .mobile {
+    background: url("../Images/iconlist_2.png") no-repeat -128px -356px;
+    padding-left: 20px;
+}
+
+.rt_01 .mobile:hover {
+    background-position: -128px -395px;
+}
+
+.rt_01 label {
+    background: url("../Images/jt_down.jpg") no-repeat right center;
+    padding-right: 10px;
+    border: 1px solid transparent;
+    border-bottom: none;
+    display: block;
+    height: 26px;
+    position: relative;
+    margin-top: 3px;
+    z-index: 2;
+}
+
+.rt_01 label:hover {
+    background: url("../Images/jt_up.jpg") no-repeat right center #fff;
+    border-color: #ddd;
+}
+
+#mobile_pop {
+    width: 215px;
+    height: 214px;
+    padding: 50px 0 20px 20px;
+    border: 1px solid #ddd;
+    border-top-color: #fff;
+    background: #fff;
+    box-shadow: 0 0 2px 1px #ddd;
+    position: absolute;
+    left: 0;
+    top: 29px;
+    background: url("../Images/app_jd_1.png") no-repeat 10px 10px;
+    color: #e4393c;
+    z-index: 1;
+}
+
+#mobile_pop .app_jd {
+    height: 110px;
+    padding-left: 100px;
+    background: url("../Images/app_jd_erwei.jpg") no-repeat 15px center;
+}
+
+#mobile_pop h2 {
+    padding-left: 3px;
+}
+
+#mobile_pop .appStore {
+    width: 97px;
+    height: 29px;
+    background: url("../Images/iconlist_2.png") no-repeat 0 -360px;
+}
+
+#mobile_pop .android {
+    width: 97px;
+    height: 29px;
+    margin-top: 4px;
+    background: url("../Images/iconlist_2.png") no-repeat 0 -399px;
+}
+
+#mobile_pop .bank {
+    height: 110px;
+    padding-left: 100px;
+    background: url("../Images/app_jd_wangyin.png") no-repeat 15px center;
+}
+
+/*************HEADER_NAV END*************/
+
+/*************HEADER************/
+#header {
+    height: 60px;
+    padding: 15px 0;
+}
+
+#logo {
+    width: 330px;
+    background: url("../Images/logo-201305.png") no-repeat;
+    height: 60px;
+    float: left;
+}
+
+#logo a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#search {
+    width: 510px;
+    height: 60px;
+    padding: 4px 86px 0 0;
+    float: left;
+    position: relative;
+}
+
+#search form {
+    width: 494px;
+    height: 30px;
+    margin-bottom: 5px;
+    border: 3px solid #e4393c;
+    background: #e4393c;
+}
+
+#search input[type="text"] {
+    width: 405px;
+    height: 20px;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+#search input[type="submit"] {
+    border: none;
+    background: #e4393c;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 22px;
+    outline: none;
+}
+
+#search_pop {
+    width: 416px;
+    box-shadow: 0 0 2px #999;
+    position: absolute;
+    top: 38px;
+    background: #fff;
+    border: 1px solid #e4393c;
+}
+
+#search_pop li {
+    line-height: 22px;
+}
+
+#search_pop li:hover {
+    background: #ffdfc6;
+}
+
+#search_pop > li {
+    cursor: pointer;
+}
+
+/*************HEADER END************/
+#nav {
+    height: 40px;
+}
+
+#footer_link {
+    height: 173px;
+}
+
+#footer {
+    height: 180px;
+}
