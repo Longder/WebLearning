@@ -111,6 +111,7 @@ a:hover {
     background: url("../Images/app_jd_1.png") no-repeat 10px 10px;
     color: #e4393c;
     z-index: 1;
+    display: none;
 }
 
 #mobile_pop .app_jd {
@@ -163,6 +164,7 @@ a:hover {
     height: 100%;
 }
 
+/*************???????************/
 #search {
     width: 510px;
     height: 60px;
@@ -204,6 +206,7 @@ a:hover {
     top: 38px;
     background: #fff;
     border: 1px solid #e4393c;
+    display: none;
 }
 
 #search_pop li {
@@ -232,6 +235,129 @@ a:hover {
     float: right;
 }
 
+#hot_words {
+    height: 18px;
+    line-height: 18px;
+    color: #999;
+}
+
+#hot_words a {
+    color: #999;
+}
+
+#hot_words li {
+    float: left;
+    margin-right: 10px;
+}
+
+#hot_words .rt {
+    margin-right: 0;
+}
+
+/*************????????************/
+/*************?????????************/
+#my_jd, #shop_cart {
+    float: left;
+    position: relative;
+}
+
+#my_jd > a, #shop_cart > a {
+    display: block;
+    width: 72px;
+    height: 30px;
+    margin-top: 12px;
+    background: url("../Images/iconlist_2.png") no-repeat -116px -24px #f7f7f7;
+    line-height: 30px;
+    padding: 0 4px 0 30px;
+    border: 1px solid #efefef;
+    color: #666;
+    font-size: 13px;
+    position: relative;
+    z-index: 2;
+}
+
+#my_jd > a:hover, #shop_cart > a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    background-position: -116px -54px;
+    border-bottom: none;
+}
+
+#my_jd > a i, #shop_cart > a i {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url("../Images/iconlist_2.png") no-repeat -95px -55px;
+    vertical-align: bottom;
+    margin-left: 5px;
+}
+
+#my_jd_pop {
+    width: 310px;
+    position: absolute;
+    top: 42px;
+    right: 0;
+    border: 1px solid #e3e3e3;
+    background: #fff;
+    z-index: 1;
+    display:none;
+}
+
+#my_jd_pop a {
+    color: #005ea7;
+}
+
+#my_jd_pop h3 {
+    font-size: 12px;
+    font-weight: normal;
+    border-bottom: 1px solid #eee;
+    padding: 6px 6px 6px 9px;
+    line-height: 25px;
+}
+
+#my_jd_pop h3 a {
+    margin-left: 3px;
+}
+
+#my_jd_pop ul {
+    border-right: 1px solid #f1f1f1;
+    width: 154px;
+    float: left;
+    padding-bottom: 10px;
+}
+
+#my_jd_pop .bd_rt {
+    border: none;
+    width: 155px;
+}
+
+#my_jd_pop li a {
+    line-height: 18px;
+    padding: 5px 15px;
+    display: block;
+}
+
+#my_jd_pop li a:hover {
+    background-color: #eee;
+    color: #ff0700;
+}
+
+/*************??????????************/
+/*************???????************/
+#shop_cart {
+    margin-left: 10px;
+}
+
+#shop_cart > a {
+    width: 85px;
+    background-position: -115px -84px;
+}
+
+#shop_cart > a:hover {
+    background-position: -115px -115px;
+}
+
+/*************????????************/
 /*************HEADER END************/
 #nav {
     height: 40px;
